@@ -1,96 +1,253 @@
-*{
-padding:0;
-margin:0;
-list-style-type:none;
-border:none;
-text-decoration:none;
-box-sizing:border-box;
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
-header{
-background-color:black;
+header {
+    background-color: black;
 }
 
-.container>nav>ul>li{
-display:inline-block;
-margin:20px;
+.container>nav>ul>li {
+    display: inline-block;
+    margin: 20px;
 }
 
-.container>nav>ul>li>a{
-color:white;
-}
-.container,.container2,.container3{
-width:100%;
-margin:0 auto;
-}
-.band-pic{
-background-image:url('../images/bandpic.jpg');
-width:100%;
-background-repeat:no-repeat;
-height:800px;
+.container>nav>ul>li>a {
+    color: white;
 }
 
-.img-content,.heading1{
-color:white;
-text-align:center;
-}
-.heading1{
-padding-top:740px;
-}
-.the-band{
-margin-top:50px;
-}
-.heading2,.love-music,.band-content{
-text-align:center;
-margin:10px 0;
-}
-img{
-width:100%;
-height:100%;
+.container,
+.container2,
+.container3,
+.container4 {
+    width: 100%;
+    margin: 0 auto;
 }
 
-.none{
-display:none;
+.container4>.tickets {
+    width: 60%;
+    margin: 0 auto;
 }
-.member-names>ul>li{
-display:inline-block;
-margin-right:20px;
+
+.band-pic {
+    background-image: url('../images/bandpic.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 800px;
 }
-.jamie-cook,.alex-turner,.matt-helders{
-width:300px;
-height:500px;
-display:inline-block;
+
+.img-content,
+.heading1 {
+    color: white;
+    text-align: center;
 }
-.member-names{
-margin-top:20px;
+
+.heading1 {
+    padding-top: 740px;
 }
+
+.the-band {
+    margin-top: 50px;
 }
-.members-names>ul>li{
-width:100px;
-margin-top:30px;
-display:inline-block;
+.cities>li{
+    display: inline-block;
+}
+.heading2,
+.love-music,
+.band-content {
+    text-align: center;
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.none {
+    display: none;
+}
+
+.member-names>ul>li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.jamie-cook,
+.alex-turner,
+.matt-helders {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+.member-names {
+    margin-top: 20px;
+}
+
+.members-names>ul>li {
+    width: 100px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.tour-dates {
+    background-color: black;
+
+}
+
+.sold-out {
+    background-color: red;
+    color: white;
+    padding: 1px;
+    margin-left: 5px;
+}
+
+.tour-dates>.container4>h2,
+.tour-dates>.container4>p {
+    color: white;
+    text-align: center;
+}
+
+.tickets>li {
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    color: grey;
+}
+
+.new-york,
+.paris,
+.san-francisco {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    width: 160px;
+    margin: 10px;
+}
+
+.new-york>.img,
+.paris>.img,
+.san-francisco>.img {
+    width: 160px;
+    height: 200px;
+}
+
+.cities {
+    margin-top: 30px;
 }
 
 
-@media(min-width:576px){
-.container,.container2,.container3{
-width:520px;
 
-.container2{
-background-position:right;
-}
-}
-@media(min-width:768px){
-.container,.container2,.container3{
-width:740px;
-}
-.container2{
-background-position:right;
-}
+.contact-us {
+    text-align: center;
+    margin: 10px;
 }
 
-@media(min-width:1200px){
-.container,.container2,.container3{
-width:1120px;
+.contacts {
+    text-align: left;
 }
+
+.img-2 {
+    background-image: url(../images/sunset-modern-city-skyline-landscape-with-orange-sky-town-buildings-cityscape-sky-flat-illustration-poster-banner-background_2175-2707.avif);
+    width: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.iframe {
+    margin-left: 0px;
+    margin-bottom: 50px;
+}
+
+@media(min-width:576px) {
+
+    .container,
+    .container2,
+    .container3,
+    .container4 {
+        max-width: 520px;
+    }
+
+    .band-pic {
+        background-position: center;
+    }
+
+    .container4>.tickets
+ {
+        display: block;
+        max-width: 60%;
+    }
+
+    .iframe {
+        margin-left: 0;
+
+    }
+
+    iframe {
+        width: 300px;
+        height: 200px
+    }
+}
+
+@media(min-width:768px) {
+
+    .container,
+    .container2,
+    .container3,
+    .container4 {
+        max-width: 740px;
+    }
+
+    .band-pic {
+        background-position: center;
+    }
+
+    .container4>.tickets {
+        display: block;
+        max-width: 60%;
+    }
+
+    .iframe {
+        margin-left: 0;
+
+    }
+
+    iframe {
+        width: 400px;
+        height: 200px;
+    }
+
+}
+
+
+@media(min-width:1200px) {
+
+    .container,
+    .container2,
+    .container3,
+    .container4 {
+        max-width: 1120px;
+    }
+
+    .container4>.tickets {
+
+        max-width: 60%;
+    }
+
+    .iframe {
+        margin-left: 500px;
+
+    }
+
+    iframe {
+        width: 500px;
+        height: 200px;
+    }
+
+
 }
